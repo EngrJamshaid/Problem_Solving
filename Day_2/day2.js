@@ -8,7 +8,7 @@ function MultiplyArr(Arr) {
   }
   return total;
 }
-
+//==================================================================
 function reverseArray(arr) {
   let newArr = [];
   for (let i = arr.length - 1; i >= 0; i--) {
@@ -16,7 +16,7 @@ function reverseArray(arr) {
   }
   return newArr;
 }
-
+//==================================================================
 function capitalizeFirst(word) {
   if (word.length === 0) {
     return "empty string";
@@ -27,7 +27,7 @@ function capitalizeFirst(word) {
   }
   return res;
 }
-
+//==================================================================
 function countCapitals(str) {
   let count = 0;
   for (let i = 0; i < str.length; i++) {
@@ -37,7 +37,7 @@ function countCapitals(str) {
   }
   return count;
 }
-
+//==================================================================
 function countWords(sentence) {
   let tot = 0;
   if (sentence.length === 0) {
@@ -50,7 +50,7 @@ function countWords(sentence) {
   }
   return tot + 1;
 }
-
+//==================================================================
 function power(base, exp) {
   let pow = 1;
   for (let i = 1; i <= exp; i++) {
@@ -58,7 +58,7 @@ function power(base, exp) {
   }
   return pow;
 }
-
+//==================================================================
 function findMinMax(arr) {
   if (arr.length === 0) {
     return null;
@@ -75,7 +75,7 @@ function findMinMax(arr) {
   }
   return { min: min, max: max };
 }
-
+//==================================================================
 function isPrime(n) {
   if (n === 0 || n === 1) {
     return false;
@@ -87,7 +87,7 @@ function isPrime(n) {
   }
   return true;
 }
-
+//==================================================================
 function fibonacci(n) {
   if (n === 0) return [];
   if (n === 1) return [0];
@@ -98,7 +98,7 @@ function fibonacci(n) {
   }
   return result;
 }
-
+//==================================================================
 function hasDuplicate(arr) {
   if (arr.length === 0 || arr.length === 1) {
     return false;
@@ -112,7 +112,7 @@ function hasDuplicate(arr) {
   }
   return false;
 }
-
+//==================================================================
 console.log("Problem 11: Product of an Array");
 console.log(MultiplyArr([1, 2, 3, 4]));
 console.log(MultiplyArr([]));
@@ -127,14 +127,14 @@ console.log(reverseArray([1, 2, 2, 3]));
 console.log(reverseArray([]));
 console.log(reverseArray([2]));
 
-console.log("Problem 13: Capitalize the First Letter");
+console.log("Problem 13: Capitalize the First Letter ");
 console.log(capitalizeFirst("hello"));
 console.log(capitalizeFirst("pakistan"));
 console.log(capitalizeFirst("a"));
 console.log(capitalizeFirst("javaScript"));
 console.log(capitalizeFirst(""));
 
-console.log("Problem 14: Count Capital Letters");
+console.log("Problem 14: Count Capital Letters in sentence or string");
 console.log(countCapitals("Hello World"));
 console.log(countCapitals("abc"));
 console.log(countCapitals("ABC"));
@@ -182,3 +182,4 @@ console.log(hasDuplicate([1, 2, 3]));
 console.log(hasDuplicate([5, 5]));
 console.log(hasDuplicate([7]));
 console.log(hasDuplicate([]));
+// end
